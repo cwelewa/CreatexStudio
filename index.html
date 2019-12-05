@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>create.St</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville|EB+Garamond&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg darkNav">
+        <div class="navbar-nav mr-auto">
+            <form action="#">
+                <select name="#" id="Lang">
+                    <option class="langu" value="Eng/$">Eng/$</option>
+                    <option class="langu" value="Franc">Francais</option>
+                    <option class="langu" value="Deutsch">Deutsch</option>
+                    <option class="langu" value="Italiano">Italiano</option>
+                </select>
+            </form>
+    
+            <div class="ml-4">
+                <p class="contact">Avaliable 24/7 at <span class="numContact"> <a href="#">[00] 33 169 7720</span></a></p>
+            </div>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <div class="nav-item nav-link">
+                <p class="navText"><i class="lnr lnr-heart mr-1"></i>Wishlist <span class="navNum">[3]</span></p>
+            </div>
+            <div class="nav-item nav-link">
+                <p class="navText"><i class="lnr lnr-sync"></i>Compare <span class="navNum">[3]</span></p>
+            </div>
+            <div class="nav-item nav-link">
+                <p class="navText"><i class="lnr lnr-map-marker"></i>Order tracing</p>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="secondNav">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="brandName">    
+        <a href="#">Cartzilla</a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul> -->
+    <form class="form-inline mr-auto ml-auto my-2 my-lg-0">
+      <div class="input-group">
+          <!-- <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGrp"> <i class="lnr lnr-magnifier"></i></span>
+          </div> -->
+          <input class="mr-sm-2 firstInput" type="search" placeholder="Search" aria-label="Search">
+          <i class="lnr lnr-magnifier" id="magnifierIcon"></i>
+      </div>
+      <select class="mr-auto selectOpt" name="#" id="places">
+          <option class="opt" value="places">Town</option>
+          <option class="opt" value="places">Village</option>
+          <option class="opt" value="places">City</option>
+      </select>
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+  </div>
+  <div class="navbar-nav mr-5" id="user">
+      <a href="#" class="#" data-target="#staticBackdrop" data-toggle="modal" >
+          <div class="d-flex">
+              <div class="userIcon">
+                  <i class="lnr lnr-user"></i>
+              </div>
+              <div class="userName">
+                  <p class="textsm">Hello, Sign in</p>
+                  <p class="textlg">My Account</p>
+              </div>
+          </div>
+      </a>
+
+      <!-- modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="modalContent">
+                <div class="modal-header" id="modalHeader">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a href="#nav-signin" class="nav-item nav-link active" id="nav-signin-tab" data-toggle="tab" role="tab" aria-controls="nav-sign" aria-selected="true" > <i class="lnr lnr-lock" id="iconLockandUser" ></i> Sign in</a>
+                            <a href="#nav-login" class="nav-item nav-link" id="nav-login-tab" data-toggle="tab" role="tab" aria-controls="nav-login" aria-selected="true"> <i class="lnr lnr-user" id="iconLockandUser" ></i> Log in</a>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+                        </div>                                              
+                    </nav>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-signin" aria-labelledby="nav-signin-tab">
+                            <form action="#">
+                                <div class="email">
+                                    <p>Email address</p>
+                                    <input type="email" name="emailAddress" id="emailAddress" placeholder="c.welewa@yahoo.com">
+                                </div>
+                                <div class="passWd">
+                                    <p>Password</p>
+                                    <input type="password" name="passWord" id="passWord"> <i class="lnr lnr-eye" id="eyeIcon"></i>
+                                </div>
+                                <div class="d-flex" id="checkboxAndForgetPassWd">
+                                    <div class="checkBoxForm">
+                                        <form action="#">
+                                            <input type="checkbox" name="checkBox" id="checkBox"> Remember me
+                                        </form>
+                                    </div>
+                                    <div class="forPasswd">
+                                        <a href="#">Forget Password?</a>
+                                    </div>
+                                </div>
+                                <div class="submitBtn">
+                                    <input type="submit" value="Sign in">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                            <form action="#">
+                                <div class="fullName">
+                                    <p>Full name</p>
+                                    <input type="text" name="nameInput" id="nameInput" placeholder="Clinton Welewa">
+                                </div>
+                                <div class="email">
+                                    <p>Email address</p>
+                                    <input type="email" name="emailAddress" id="emailAddress" placeholder="c.welewa@yahoo.com">
+                                </div>
+                                <div class="passWd">
+                                    <p>Password</p>
+                                    <input type="password" name="passWord" id="passWord"> <i class="lnr lnr-eye" id="eyeIcon"></i>
+                                </div>
+                                 <div class="passWd">
+                                    <p>Confirm password</p>
+                                    <input type="password" name="passWord" id="passWord"> <i class="lnr lnr-eye" id="eyeIcon"></i>
+                                </div>
+                                <!-- <div class="d-flex" id="checkboxAndForgetPassWd">
+                                    <div class="checkBoxForm">
+                                        <form action="#">
+                                            <input type="checkbox" name="checkBox" id="checkBox"> Remember me
+                                        </form>
+                                    </div>
+                                    <div class="forPasswd">
+                                        <a href="#">Forget Password?</a>
+                                    </div>
+                                </div> -->
+                                <div class="submitBtn">
+                                    <input type="submit" value="Sign Up">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="modal-footer">
+                   
+                </div> -->
+            
+            
+            </div>
+        </div>
+      </div>
+      <!--  -->
+  </div>
+  <div class="navbar-nav" id="cart">
+      <a href="#">
+          <div class="d-flex">
+              <div class="cartIcon">
+                  <i class="lnr lnr-cart"></i>
+              </div>
+              <div class="cartDetails">
+                  <p class="textsm">My Cart</p>
+                  <p class="textlg">$1,247.00</p>
+              </div>
+          </div>
+      </a>
+  </div>
+</nav>
+<!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03"> -->
+    <nav class="navbar navbar-expand-lg" >
+        <div class="navbar-nav" id="thirdNavSection">
+            <div class="nav-item nav-link" id="dropbody">
+                <div class="">
+                    <p class="depart"><i class="lnr lnr-menu mr-1"></i>Department <i class="lnr lnr-chevron-down" style="font-size: 14px"></i></p>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-"></i>
+                        Computers & Accessories
+                        <i class="lnr lnr-chevron-right"></i>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-"></i>
+                        Smartphones & Tablets
+                        <i class="lnr lnr-chevron-right"></i>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-"></i>
+                        TV, Video & Audio
+                        <i class="lnr lnr-chevron-right"></i>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas-fa-"></i>
+                        Cameras, Photo & Video
+                        <i class="lnr lnr-chevron-right"></i>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-"></i>
+                        Headphones
+                        <ii class="lnr lnr-chevron-right"></ii>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-"></i>
+                        Wearable Electronics
+                        <i class="lnr lnr-chevron-right"></i>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-"></i>
+                        Printers & Ink
+                        <i class="lnr lnr-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+           <div class="nav-item nav-link" id="dropbodyHome">
+                <div class="">
+                    <p class="depart">Home</p>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-item" id="">
+                        <h5 class="hText">Fashion Store v.1</h5>
+                        <span class="textafter">Classic shop layout</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <h5 class="hText">Fashion Store v.2</h5>
+                        <span class="textafter">Slider + Featured categories</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                       <h5 class="hText">Electronics Store</h5>
+                       <span class="textafter">Classic shop layout</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <h5 class="hText">Marketplace</h5>
+                        <span class="textafter">Multi-vendor, digital goods</span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-item nav-link" id="dropbodyHome">
+                 <div class="">
+                    <p class="depart">Shop</p>
+                </div>
+                <div class="dropdown" id="layoutCollection">
+                    <div class="d-flex">
+                        <div class="layouts">
+                            <div class="GridLayoutOne">
+                                <p class="headTextLayout">Shop layout</p>
+                                <p class="textsmGrid"><a href="#">Shop Grid - Left SideBar</a></p>
+                                <p class="textsmGrid"><a href="#">Shop Grid - Right SideBar</a></p>
+                                <p class="textsmGrid"><a href="#">Shop Grid - Filter on Top</a></p>
+                                <p class="textsmGrid"><a href="#">Shop Grid - Left Sidebar</a></p>
+                                <p class="textsmGrid"><a href="#">Shop Grid - Right Sidebar</a></p>
+                                <p class="textsmGrid"><a href="#">Shop Grid - Filters on Top</a></p>
+                            </div>
+                            <div class="GridLayoutTwo">
+                                <p class="headTextLayout">MarketPlace</p>
+                                <p class="textsmGrid"><a href="#">Category Page</a></p>
+                                <p class="textsmGrid"><a href="#">Single Item Page</a></p>
+                                <p class="textsmGrid"><a href="#">Vendor Page</a></p>
+                                <p class="textsmGrid"><a href="#">Cart</a></p>
+                                <p class="textsmGrid"><a href="#">Checkoput</a></p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="GridLayoutPagePart">
+                                <p class="headTextLayout">Shop pages</p>
+                                <p class="textsmGrid"><a href="#">Shop Categories</a></p>
+                                <p class="textsmGrid"><a href="#">Product Page v.1</a></p>
+                                <p class="textsmGrid"><a href="#">Product Page v.2</a></p>
+                                <p class="textsmGrid"><a href="#">Cart</a></p>
+                                <p class="textsmGrid"><a href="#">Checkout - Details</a></p>
+                                <p class="textsmGrid"><a href="#">Checkout - Shippping</a></p>
+                                <p class="textsmGrid"><a href="#">Checkout - Payment</a></p>
+                                <p class="textsmGrid"><a href="#">Checkout - Review</a></p>
+                                <p class="textsmGrid"><a href="#">Order Tracking</a></p>
+                                <p class="textsmGrid"><a href="#">Product Comparison</a></p>
+
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="imgCollection">
+                                <img src="./img/collection.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item nav-link mr-4" id="dropbodyHome">
+                 <div class="">
+                    <p class="depart">Account</p>
+                </div>
+                <div class="dropdown">
+                    <div class="d-flex">
+                        <div class="layouts">
+                            <div class="GridLayoutOne">
+                                <p class="textsmGrid"><a href="#">Shop User Account</a><i class="lnr lnr-chevron-right"></i></p>
+                                <p class="textsmGrid"><a href="#">Vendor Dashboard</a><i class="lnr lnr-chevron-right"></i></p>
+                                <p class="textsmGrid"><a href="#">Sign In/Sign Up</a></p>
+                                <p class="textsmGrid"><a href="#">Password Recovery</a></p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item nav-link" id="dropbodyHome">
+                <div class="">
+                    <p class="depart">Pages</p>
+                </div>
+                <div class="dropdown">
+                    <div class="d-flex">
+                        <div class="layouts">
+                            <div class="GridLayoutOne">
+                                <p class="textsmGrid"><a href="#">Navbar Variants</a><i class="lnr lnr-chevron-right"></i></p>
+                               <div class="dropdown-divider" id="divider"></div>
+                                <p class="textsmGrid"><a href="#">About Us</a></p>
+                                <p class="textsmGrid"><a href="#">Contacts</a></p>
+                                <p class="textsmGrid"><a href="#">Help Center</a><i class="lnr lnr-chevron-right"></i></p>
+                                <div class="textsmGrid"><a href="#">404 Not Found</a><i class="lnr lnr-chevron-right"></i></div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item nav-link" id="dropbodyHome">
+                 <div class="">
+                    <p class="depart">Blog</p>
+                </div>
+                <div class="dropdown">
+                    <div class="d-flex">
+                        <div class="layouts">
+                            <div class="GridLayoutOne">
+                                <p class="textsmGrid"><a href="#">Blog List Layouts</a><i class="lnr lnr-chevron-right"></i></p>
+                                <p class="textsmGrid"><a href="#">Blog Grid Layouts</a><i class="lnr lnr-chevron-right"></i></p>
+                                <p class="textsmGrid"><a href="#">Single Post</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item nav-link">
+                <p class="docs">Docs / Components</p>
+            </div>
+        </div>
+    </nav>
+<!-- </div> -->
+
+<main class="mainContent">
+   
+<!-- CountDownTimer -->
+<div class="container" id="timerSet">
+    <p id="timer">
+        <span id="timer-days"></span>
+        <span id="timer-hours"></span>
+        <span id="timer-mins"></span>
+        <span id="timer-secs"></span>
+    </p>
+</div>
+
+
+
+</main>
+
+
+
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
